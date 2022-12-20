@@ -19,6 +19,14 @@ agent any
                 sh 'ng build' 
             }
         }
+
+        stage("docker image"){
+
+            steps{
+               sh 'docker build -t wassimba/project_ang .'
+
+            }
+        }
          }
     }
 
