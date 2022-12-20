@@ -15,7 +15,8 @@ agent any
         
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'npm install'
+                sh 'ng build' 
             }
         }
          }
